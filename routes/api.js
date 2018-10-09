@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/user', function(req, res, next) {
-  res.json({"id":13552,"showNickName":null,"mobileNumber":"13333823462","pushLevel":1,"upperId":13422});
+  res.json({"user": [ {"id":13552,"showNickName":null,"mobileNumber":"13333823462","pushLevel":1,"upperId":13422} ]});
 });
 
 router.get('/branch', function(req, res, next) {
