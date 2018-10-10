@@ -11,15 +11,17 @@
     <title>Exchange</title>
     <!-- <link href="/stylesheets/bootstrap.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="javascripts/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="/stylesheets/app.css" rel="stylesheet">
     <link href="/stylesheets/custom.css" rel="stylesheet">
+    <link href="/stylesheets/bootstrap-table.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
     <script>var themeURL = ["/static/css/theme_black.36b460ac8455d3a3384b521b75c593c2.css", "/static/css/theme_default.0fd12bb80fb377de9fa94d20c4ef2ac2.css", "/static/css/theme_white.335f447b27e4c404b63e97e76c2c3ad1.css"]</script>
     <script src="javascripts/jquery.js"></script>
     <!-- <script src="javascripts/bootstrap.js"></script> -->
     <script src="javascripts/bootstrap-treeview.js"></script>
+    <script src="javascripts/bootstrap-table.min.js"></script>
     <script src="javascripts/helper.js"></script>
     <style id="erd_scroll_detection_scrollbar_style">/* Created by the element-resize-detector library. */
       .erd_scroll_detection_container > div::-webkit-scrollbar {
@@ -164,7 +166,13 @@
 
                         <div class="rightCon">
                               <!-- Tokens on Hold -->
+
                               <div id="tokensOnHold" class="onhold">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">持仓</div>
+                                  <table class="table" id="onholdtable">
+                                  </table>
+                                </div>
                                     Tokens on Hold
                                     <ul>
                                           <li>BTC</li>
@@ -192,7 +200,9 @@
                                    </div>
                                    <div class="recomm-content borderbox">
                                          <dl class="hot-box clearfix">
-                                               asdasdsad<br>asdsad<br>asda
+                                               <button type="button" class="btn btn-primary btn-lg" id='queryButton'>
+                                                 Query
+                                               </button>
                                          </dl>
                                    </div>
                               </div>
@@ -207,6 +217,9 @@
                                           <li class="fundActive">Order Table</li>
                                           <!-- <li data-v-48366ce4="" class="">OTC account</li> -->
                                     </ul>
+                                    <table id='oredertable'>
+
+                                    </table>
                               </div>
               	      </div>
                   </div>
@@ -217,45 +230,6 @@
 </body>
  <script>
       //$('#tokensOnHold').css("background-color", "yellow");
-
-/*      $(function(){
-        var mytree = [
-            {
-                text: "Parent 1",
-                href: "#Parent-1",
-                color: "#FFFFF",
-                backColor: "#0a152d",
-                nodes: [
-                    {
-                        text: "Child 1",
-                        color: "#FFFFF",
-                        backColor: "#0a152d",
-                        nodes: [
-                            {
-                                text: "Grandchild 1",
-                            },
-                            {
-                                text: "Grandchild 2"
-                            }
-                        ]
-                    },
-                    {
-                        text: "Child 2",
-                        color: "#FFFFF",
-                        backColor: "#0a152d",
-                    }
-                ]
-            },
-            {
-                text: "Parent 2",
-                href: "#Parent-2",
-                color: "#FFFFF",
-                backColor: "#0a152d",
-            }
-        ];
-
-        $('#tree').treeview({data: mytree, enableLinks: true});
-     });*/
 
 
  </script>

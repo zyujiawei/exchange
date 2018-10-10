@@ -5,7 +5,8 @@
       }
       .onhold {
           border: 1px solid #25334f;
-          height: 100px;
+          min-height: 100px;
+          height:100%;
           background: #0a152d;
       }
       .m-main .main-content .recommend {
