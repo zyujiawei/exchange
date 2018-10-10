@@ -11,11 +11,7 @@
     <title>Exchange</title>
     <!-- <link href="/stylesheets/bootstrap.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<<<<<<< HEAD
     <script src="javascripts/jquery.js"></script>
-=======
-
->>>>>>> c253c894176b40befa1edad03f128673f1d45e3f
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="/stylesheets/app.css" rel="stylesheet">
     <link href="/stylesheets/custom.css" rel="stylesheet">
@@ -177,19 +173,21 @@
                                   <table class="table" id="onholdtable">
                                   </table>
                                 </div>
-                                    Tokens on Hold
-                                    <ul>
-                                          <li>BTC</li>
-                                          <li>LTC</li>
-                                          <li>ETH</li>
-                                    </ul>
                               </div>
                               <!-- Tokens on Hold -->
 
                               <div class="recommend clearfix">
+                                <form>
                                    <div class="recomm-content borderbox">
                                          <dl class="hot-box clearfix">
-                                               asdasdsad<br>asdsad<br>asda
+                                            <div class="form-group">
+                                              <select class="form-control" id="tokenType">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                              </select>
+                                            </div>  
                                          </dl>
                                    </div>
                                   <div class="recomm-content borderbox">
@@ -203,12 +201,13 @@
                                          </dl>
                                    </div>
                                    <div class="recomm-content borderbox">
-                                         <dl class="hot-box clearfix">
+                                         <dl class="hot-box clearfix queryBox">
                                                <button type="button" class="btn btn-primary btn-lg" id='queryButton'>
                                                  Query
                                                </button>
                                          </dl>
                                    </div>
+                                </form>
                               </div>
 
                         </div>
