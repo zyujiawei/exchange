@@ -79,7 +79,14 @@ $(document).ready(function(){
   $('#oredertable').bootstrapTable({
     columns: [{
         field: 'side',
-        title: '买卖方向'
+        title: '买卖方向',
+        formatter:function(value, row, index, field){
+          if(value =='SELL'){
+            return '卖'
+          } else{
+            return '买'
+          }
+        }
     }, {
         field: 'price',
         title: '价格'
@@ -95,9 +102,8 @@ $(document).ready(function(){
     }, {
         field: 'status',
         title: '订单状态',
-        formatter: function (value, row, index, field){
+        formatter: function(value, row, index, field){
           var text = 'error';
-          console.log(value)
           switch (value) {
             case 0,1:
               text = '未成交'
@@ -119,9 +125,17 @@ $(document).ready(function(){
         title: '委托时间',
         sortable: true,
         order: 'desc',
+        formatter:function(value, row, index, field){
+          var date = new Date(value);
+          return date.getFullYear()+"-" + (date.getMonth()+1) + "-" + date.getDate()+' '+date.getHours()+':'+date.getMinutes();
+        }
     }, {
         field: 'mtime',
-        title: '处理时间'
+        title: '处理时间',
+        formatter:function(value, row, index, field){
+          var date = new Date(value);
+          return date.getFullYear()+"-" + (date.getMonth()+1) + "-" + date.getDate()+' '+date.getHours()+':'+date.getMinutes();
+        }
     }]
   });
   $('#tree').treeview({
