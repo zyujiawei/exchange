@@ -8,148 +8,18 @@
     <meta name="description" content="专业虚拟货币交易站,使莱特币LTC,以太坊ETH,BCH,以太经典(ETC),达世币DASH,瑞波XRP,BCH,PAY,BTG,OMG,EOS,RDN,SNT,KNC,MTL,QSP,RCN,AST,TNT,BCD,TNB等数字货币以比特币BTC,USDT进行交易！提供实时比特币价格,比特币行情.">
     <meta name="format-detection" content="text=no">
     <meta name="format-detection" content="password=no">
-	<title>Exchange</title>
-	<link href="/stylesheets/app.css" rel="stylesheet">
-	<script>var themeURL = ["/static/css/theme_black.36b460ac8455d3a3384b521b75c593c2.css", "/static/css/theme_default.0fd12bb80fb377de9fa94d20c4ef2ac2.css", "/static/css/theme_white.335f447b27e4c404b63e97e76c2c3ad1.css"]</script>
-    <style type="text/css">
-      .slider-container {
-      margin: 0 auto;
-      overflow: hidden;
-      z-index: 1;
-      height: 100%;
-      width: 100%;
-      position: relative;
-      white-space: nowrap
-      }
+    <title>Exchange</title>
+    <!-- <link href="/stylesheets/bootstrap.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-      .slider-center-center {
-      margin: auto;
-      z-index: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0
-      }
-
-      .slider-touch {
-      height: 100%
-      }
-
-      .slider-wrapper {
-      box-sizing: content-box;
-      display: -ms-flexbox;
-      display: flex;
-      height: 100%;
-      position: relative;
-      transition-property: transform;
-      width: 100%;
-      z-index: 1;
-      -ms-flex-align: center;
-      align-items: center
-      }
-
-      .swiper-container-vertical .slider-wrapper {
-      -moz-flex-direction: column;
-      -ms-flex-direction: column;
-      -o-flex-direction: column;
-      flex-direction: column
-      }
-
-      .slider-item {
-      -ms-flex-negative: 0;
-      flex-shrink: 0;
-      height: 100%;
-      position: relative;
-      width: 100%;
-      -ms-flex-align: center;
-      align-items: center;
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 40px;
-      -ms-flex-pack: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      background-position: 50%!important;
-      background-size: cover!important
-      }
-
-      .slider-pagination {
-      position: absolute;
-      text-align: center;
-      transform: translateZ(0);
-      z-index: 10
-      }
-
-      .slider-pagination-bullets {
-      bottom: 10px;
-      left: 0;
-      width: 100%
-      }
-
-      .slider-pagination-bullet {
-      background: #000 none repeat scroll 0 0;
-      border-radius: 100%;
-      display: inline-block;
-      height: 8px;
-      opacity: .2;
-      width: 8px;
-      cursor: pointer;
-      margin: 0 5px
-      }
-
-      .swiper-container-vertical .slider-pagination-bullets {
-      bottom: auto;
-      left: auto;
-      width: auto;
-      right: 10px;
-      top: 50%;
-      transform: translate3d(0,-50%,0)
-      }
-
-      .swiper-container-vertical .slider-pagination-bullet {
-      display: block;
-      margin: 5px 0
-      }
-
-      .slider-pagination-bullet-active {
-      background: #fff none repeat scroll 0 0;
-      opacity: 1
-      }
-
-      .slider-loading {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 999
-      }
-
-      .slider-button-next,.slider-button-prev {
-      background-position: 50%;
-      background-repeat: no-repeat;
-      background-size: 27px 44px;
-      cursor: pointer;
-      height: 44px;
-      margin-top: -22px;
-      position: absolute;
-      top: 50%;
-      width: 27px;
-      z-index: 10
-      }
-
-      .slider-button-prev {
-      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z' fill='%23fff'/%3E%3C/svg%3E");
-      left: 10px;
-      right: auto
-      }
-
-      .slider-button-next {
-      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z' fill='%23fff'/%3E%3C/svg%3E");
-      left: auto;
-      right: 10px
-      }
-    </style>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="/stylesheets/app.css" rel="stylesheet">    
+    <link href="/stylesheets/custom.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+    <script>var themeURL = ["/static/css/theme_black.36b460ac8455d3a3384b521b75c593c2.css", "/static/css/theme_default.0fd12bb80fb377de9fa94d20c4ef2ac2.css", "/static/css/theme_white.335f447b27e4c404b63e97e76c2c3ad1.css"]</script>
+    <script src="javascripts/jquery.js"></script>
+    <!-- <script src="javascripts/bootstrap.js"></script> -->
+    <script src="javascripts/bootstrap-treeview.js"></script>    
     <style id="erd_scroll_detection_scrollbar_style">/* Created by the element-resize-detector library. */
       .erd_scroll_detection_container > div::-webkit-scrollbar {
       	display: none;
@@ -195,105 +65,243 @@
 </head>
 <body>
 	<section>
-      <div name="m-index" class="container">      	
-	        <div class="m-header">
-	          <p style="display: none;"></p>
-	          <div class="header clearfix">
-	            <div class="logo">
-	              <a href="https://www.mdex.mn/" class="router-link-active">
-	                <img alt="" src="/images/20180724222648986.png"></a>
-	            </div>
-	            <ul class="header-ul clearfix">
-	              <li>
-	                <a href="https://www.mdex.mn/index" class="">币币交易
-	                  <span></span></a>
-	              </li>
-	              
-	              <li>
-	                <a href="https://otc.mdex.mn/index" target="_blank">场外交易</a></li>
-	              <li>|</li>
-	              <li>
-	                <a href="https://www.mdex.mn/trade" class="router-link-exact-active router-link-active">交易中心
-	                  <span></span></a>
-	              </li>
-				</ul>
-	            
-	            <div class="header-right">
-	              <ul class="rightNav">
+        <!-- Header -->
+        <div class="m-header">
+          <p style="display: none;"></p>
+          <div class="header clearfix">
+            <div class="logo">
+              <a href="https://www.mdex.mn/" class="router-link-active">
+                <img alt="" src="/images/20180724222648986.png"></a>
+            </div>
+            <ul class="header-ul clearfix">
+              <li>
+                <a href="https://www.mdex.mn/index" class="router-link-exact-active router-link-active">币币交易
+                  <span></span></a>
+              </li>
+              
+              <li>
+                <a href="https://otc.mdex.mn/index" target="_blank">场外交易</a></li>
+              <li>|</li>
+              <li>
+                <a href="https://www.mdex.mn/trade">交易中心
+                  <span></span></a>
+              </li>
+                  </ul>
+            
+            <div class="header-right">
+              <ul class="rightNav">
 
-                      <% userData.forEach(function(user) { %>
-                        <li class="rightNav_item"><%= user.id %></li>
-                        <li class="rightNav_item"><%= user.mobileNumber %></li>
-                        <li class="rightNav_item"><%= user.pushLevel %></li>
-                        <li class="rightNav_item"><%= user.upperId %></li>                  
-                      <% }); %>
+                <% userData.forEach(function(user) { %>
+                  <li class="rightNav_item"><span>ID: </span><%= user.id %></li>
+                  <li class="rightNav_item"><span>Mobile Number: </span><%= user.mobileNumber %></li>
+                  <li class="rightNav_item"><span>pushLevel: </span><%= user.pushLevel %></li>
+                  <li class="rightNav_item"><span>upperId: </span><%= user.upperId %></li>                  
+                <% }); %>
 
-	                <li class="rightNav_item">
-	                  <div class="lang select_menu">
-	                    <span>
-	                      Lang<i class="flag_icon zh_CN"></i>
-	                    </span>
-	                    <ul class="langMark">
-	                      <li>
-	                        <i class="flag_icon zh_CN"></i>简体中文</li>
-	                      <li>
-	                        <i class="flag_icon en_US"></i>English</li>
-	                      <li>
-	                        <i class="flag_icon ko_KR"></i>조선말</li>
-	                    </ul>
-	                    <i class="icon-down"></i>
-	                  </div>
-	                </li>
-	              </ul>
-	            </div>
-	          </div>
-	          <section class="dialog-pop">
-	            <div class="dialog-mark" style="display: none;"></div>
-	            <div class="dialog-body" style="width: 450px; margin-left: -225px; display: none;">
-	              <header class="dialog-title">设置</header>
-	              <span class="dialog-close">╳</span>
-	              <section class="dialog-content">
-	                <div class="setThemePop">
-	                  <div class="setTheme">
-	                    <div class="inlint-title">主题</div>
-	                    <div class="radioLine">
-	                      <span class="tadioTd">
-	                        <input id="one" name="theme" value="theme_default" type="radio">
-	                        <label for="one">蓝色版</label></span>
-	                      <span class="tadioTd">
-	                        <input id="two" name="theme" value="theme_white" type="radio">
-	                        <label for="two">浅色版</label></span>
-	                      <span class="tadioTd">
-	                        <input id="two" name="theme" value="theme_black" type="radio">
-	                        <label for="two">黑色版</label></span>
-	                    </div>
-	                  </div>
-	                </div>
-	              </section>
-	              <footer class="dialog-footer">
-	                <div>
-	                  <button>确定</button></div>
-	              </footer>
-	            </div>
-	          </section>
-	        </div>
+                <li class="rightNav_item">
+                  <div class="lang select_menu">
+                    <span>
+                      Lang<i class="flag_icon zh_CN"></i>
+                    </span>
+                    <ul class="langMark">
+                      <li>
+                        <i class="flag_icon zh_CN"></i>简体中文</li>
+                      <li>
+                        <i class="flag_icon en_US"></i>English</li>
+                      <li>
+                        <i class="flag_icon ko_KR"></i>조선말</li>
+                    </ul>
+                    <i class="icon-down"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="dialog-pop">
+            <div class="dialog-mark" style="display: none;"></div>
+            <div class="dialog-body" style="width: 450px; margin-left: -225px; display: none;">
+              <header class="dialog-title">设置</header>
+              <span class="dialog-close">╳</span>
+              <section class="dialog-content">
+                <div class="setThemePop">
+                  <div class="setTheme">
+                    <div class="inlint-title">主题</div>
+                    <div class="radioLine">
+                      <span class="tadioTd">
+                        <input id="one" name="theme" value="theme_default" type="radio">
+                        <label for="one">蓝色版</label></span>
+                      <span class="tadioTd">
+                        <input id="two" name="theme" value="theme_white" type="radio">
+                        <label for="two">浅色版</label></span>
+                      <span class="tadioTd">
+                        <input id="two" name="theme" value="theme_black" type="radio">
+                        <label for="two">黑色版</label></span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer class="dialog-footer">
+                <div>
+                  <button>确定</button></div>
+              </footer>
+            </div>
+          </section>
+      </div>
+      <!-- // Header -->
 
-	        <div class="funds">
-	        	<div class="funds-main">
-	        		<div class="funds-aside">
-	        			<div class="funds-aside-list">
-	        				TreeView goes here
-	        			</div>
-	        			<div class="funds-content">
-	        				//
-	        			</div>
-	        		</div>
-	        	</div>
-	        </div>
+      <!-- Main Content -->
+      <div name="m-index" class="container m-main">
+            <div class="funds main-content">
+              	<div class="funds-main">
+                        <!-- TreeView -->
+              		<div class="funds-aside">
+              			<div class="">              				
+                                    <div id="tree"></div>
+              			</div>
+              		</div>
+                        <!-- TreeView -->
+
+                        <div class="rightCon">
+                              <!-- Tokens on Hold -->
+                              <div id="tokensOnHold" class="onhold">
+                                    Tokens on Hold
+                                    <ul>
+                                          <li>BTC</li>
+                                          <li>LTC</li>
+                                          <li>ETH</li>
+                                    </ul>
+                              </div>
+                              <!-- Tokens on Hold -->
+
+                              <div class="recommend clearfix">
+                                   <div class="recomm-content borderbox">
+                                         <dl class="hot-box clearfix">
+                                               asdasdsad<br>asdsad<br>asda
+                                         </dl>
+                                   </div> 
+                                  <div class="recomm-content borderbox">
+                                         <dl class="hot-box clearfix">
+                                               asdasdsad<br>asdsad<br>asda
+                                         </dl>
+                                   </div> 
+                                   <div class="recomm-content borderbox">
+                                         <dl class="hot-box clearfix">
+                                               asdasdsad<br>asdsad<br>asda
+                                         </dl>
+                                   </div> 
+                                   <div class="recomm-content borderbox">
+                                         <dl class="hot-box clearfix">
+                                               asdasdsad<br>asdsad<br>asda
+                                         </dl>
+                                   </div> 
+                              </div>
+                              
+                        </div>
 
 
-    	</div>
-	</section>
+
+                        <div class="funds-content">
+                              <div class="fund-manage-top">
+                                    <ul class="fund-manage-nav">
+                                          <li class="fundActive">Order Table</li> 
+                                          <!-- <li data-v-48366ce4="" class="">OTC account</li> -->
+                                    </ul> 
+                              </div>
+              	      </div>
+                  </div>
+          	</div>
+      </div>
+   </section>
 
 </body>
+ <script>
+      //$('#tokensOnHold').css("background-color", "yellow");
+
+/*      $(function(){
+        var mytree = [
+            {
+                text: "Parent 1",
+                href: "#Parent-1",
+                color: "#FFFFF",
+                backColor: "#0a152d",
+                nodes: [
+                    {
+                        text: "Child 1",
+                        color: "#FFFFF",
+                        backColor: "#0a152d",
+                        nodes: [
+                            {
+                                text: "Grandchild 1",
+                            },
+                            {
+                                text: "Grandchild 2"
+                            }
+                        ]
+                    },
+                    {
+                        text: "Child 2",
+                        color: "#FFFFF",
+                        backColor: "#0a152d",
+                    }
+                ]
+            },
+            {
+                text: "Parent 2",
+                href: "#Parent-2",
+                color: "#FFFFF",
+                backColor: "#0a152d",
+            }
+        ];
+
+        $('#tree').treeview({data: mytree, enableLinks: true});
+     });*/
+
+     var tree = [
+        {
+          text: "Parent 1",
+          nodes: [
+            {
+              text: "Child 1",
+              nodes: [
+                {
+                  text: "Google",
+                  href: "https://www.google.com"
+                },
+                {
+                  text: "Twitter",
+                  href: "https://www.twitter.com"
+                }
+              ]
+            },
+            {
+              text: "Facebook",
+              href: "https://www.facebook.com"
+            }
+          ]
+        },
+        {
+          text: "Google",
+          href: "https://www.google.com"
+        },
+        {
+           text: "Twitter",
+           href: "https://www.twitter.com",
+           tags: ["link"]
+        }
+      ];
+
+      function initTree(treeData) {
+          $('#tree').treeview({
+              data: treeData,
+              enableLinks: true
+          });
+          
+          // collapses all nodes
+          //$('#tree').treeview('collapseAll', { silent: true });
+      }
+
+      initTree(tree);
+
+
+ </script> 
 </html>
