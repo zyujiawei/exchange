@@ -3,11 +3,22 @@
           width: 1000px;
           margin-bottom: 10px;
       }
+      .rightCon .hot-box {padding-top: 6.5%;}
+      .queryBox {text-align: center;}
+      .queryBox button {background-color: #143b5e;}
       .onhold {
           border: 1px solid #25334f;
           height: 100px;
           background: #0a152d;
+          padding: 10px;
+          text-align: center;
       }
+      .onhold h4 {font-size: 15px;}
+      .onhold ul li {display: inline; margin-right: 15px;}
+      .onhold ul {padding-top: 20px;}
+      .onhold ul li span {color: #516081;}
+      .m-main .main-content {width: 100% !important;}
+      #tree .list-group-item {border: none;}
       .m-main .main-content .recommend {
           padding-top: 10px !important;
       }
@@ -152,6 +163,3 @@
       left: auto;
       right: 10px
       }
-      .m-main .main-content {width: 100% !important;}
-      #tree .list-group-item {border: none;}
-      /*.node-tree {background: #0a152d;}*/

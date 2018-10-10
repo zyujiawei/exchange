@@ -12,7 +12,7 @@
     <!-- <link href="/stylesheets/bootstrap.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="/stylesheets/app.css" rel="stylesheet">
     <link href="/stylesheets/custom.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
@@ -154,109 +154,77 @@
       <div name="m-index" class="container m-main">
             <div class="funds main-content">
               	<div class="funds-main">
-                        <!-- TreeView -->
-              		<div class="funds-aside">
-              			<div class="">
-                      <div id="tree"></div>
-              			</div>
-              		</div>
-                        <!-- TreeView -->
+                    <!-- TreeView -->
+                		<div class="funds-aside">
+                			<div class="">
+                        <div id="tree"></div>
+                			</div>
+                		</div>
+                    <!-- // TreeView -->
 
-                        <div class="rightCon">
-                              <!-- Tokens on Hold -->
-                              <div id="tokensOnHold" class="onhold">
-                                    Tokens on Hold
-                                    <ul>
-                                          <li>BTC</li>
-                                          <li>LTC</li>
-                                          <li>ETH</li>
-                                    </ul>
-                              </div>
-                              <!-- Tokens on Hold -->
+                    <div class="rightCon">
+                          <!-- Tokens on Hold -->
+                          <div id="tokensOnHold" class="onhold">
+                                <h4>Tokens on Hold</h4>
+                                <ul>
+                                      <li><span>Buy: </span>5500.0</li>
+                                      <li><span>Sell: </span>8125.0</li>
+                                      <li><span>Hold: </span>-2625.0</li>
+                                </ul>
+                          </div>
+                          <!-- // Tokens on Hold -->
 
-                              <div class="recommend clearfix">
-                                   <div class="recomm-content borderbox">
-                                         <dl class="hot-box clearfix">
-                                               asdasdsad<br>asdsad<br>asda
-                                         </dl>
-                                   </div>
-                                  <div class="recomm-content borderbox">
-                                         <dl class="hot-box clearfix">
-                                               asdasdsad<br>asdsad<br>asda
-                                         </dl>
-                                   </div>
-                                   <div class="recomm-content borderbox">
-                                         <dl class="hot-box clearfix">
-                                               asdasdsad<br>asdsad<br>asda
-                                         </dl>
-                                   </div>
-                                   <div class="recomm-content borderbox">
-                                         <dl class="hot-box clearfix">
-                                               asdasdsad<br>asdsad<br>asda
-                                         </dl>
-                                   </div>
-                              </div>
+                          <!-- Options for Order Table -->
+                          
+                          <div class="recommend clearfix">
+                            <form>                            
+                               <div class="recomm-content borderbox">
+                                     <dl class="hot-box clearfix">
+                                      <div class="form-group">
+                                        <select class="form-control" id="tokenType">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                        </select>
+                                      </div>                                          
+                                     </dl>
+                               </div>
+                              <div class="recomm-content borderbox">
+                                     <dl class="hot-box clearfix">
+                                           asdasdsad<br>asdsad<br>asda
+                                     </dl>
+                               </div>
+                               <div class="recomm-content borderbox">
+                                     <dl class="hot-box clearfix">
+                                           asdasdsad<br>asdsad<br>asda
+                                     </dl>
+                               </div>
+                               <div class="recomm-content borderbox">
+                                     <dl class="hot-box clearfix queryBox">
+                                      <div class="form-group">
+                                        <button type="button" class="btn btn-primary" id="queryOrder">Query</button>
+                                      </div>                                           
+                                     </dl>
+                               </div>
+                            </form>
+                          </div>
+                          <!-- // Options for Order Table -->                          
+                    </div>
 
-                        </div>
-
-
-
-                        <div class="funds-content">
-                              <div class="fund-manage-top">
-                                    <ul class="fund-manage-nav">
-                                          <li class="fundActive">Order Table</li>
-                                          <!-- <li data-v-48366ce4="" class="">OTC account</li> -->
-                                    </ul>
-                              </div>
-              	      </div>
+                    <!-- Order Table -->
+                    <div class="funds-content">
+                          <div class="fund-manage-top">
+                                <ul class="fund-manage-nav">
+                                      <li class="fundActive">Order Table</li>
+                                </ul>
+                          </div>
+          	        </div>
+                    <!-- // Order Table -->
                   </div>
           	</div>
       </div>
    </section>
 
 </body>
- <script>
-      //$('#tokensOnHold').css("background-color", "yellow");
-
-/*      $(function(){
-        var mytree = [
-            {
-                text: "Parent 1",
-                href: "#Parent-1",
-                color: "#FFFFF",
-                backColor: "#0a152d",
-                nodes: [
-                    {
-                        text: "Child 1",
-                        color: "#FFFFF",
-                        backColor: "#0a152d",
-                        nodes: [
-                            {
-                                text: "Grandchild 1",
-                            },
-                            {
-                                text: "Grandchild 2"
-                            }
-                        ]
-                    },
-                    {
-                        text: "Child 2",
-                        color: "#FFFFF",
-                        backColor: "#0a152d",
-                    }
-                ]
-            },
-            {
-                text: "Parent 2",
-                href: "#Parent-2",
-                color: "#FFFFF",
-                backColor: "#0a152d",
-            }
-        ];
-
-        $('#tree').treeview({data: mytree, enableLinks: true});
-     });*/
-
-
- </script>
 </html>
