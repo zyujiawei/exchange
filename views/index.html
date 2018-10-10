@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="/stylesheets/app.css" rel="stylesheet">    
+    <link href="/stylesheets/app.css" rel="stylesheet">
     <link href="/stylesheets/custom.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
     <script>var themeURL = ["/static/css/theme_black.36b460ac8455d3a3384b521b75c593c2.css", "/static/css/theme_default.0fd12bb80fb377de9fa94d20c4ef2ac2.css", "/static/css/theme_white.335f447b27e4c404b63e97e76c2c3ad1.css"]</script>
     <script src="javascripts/jquery.js"></script>
     <!-- <script src="javascripts/bootstrap.js"></script> -->
-    <script src="javascripts/bootstrap-treeview.js"></script>    
+    <script src="javascripts/bootstrap-treeview.js"></script>
+    <script src="javascripts/helper.js"></script>
     <style id="erd_scroll_detection_scrollbar_style">/* Created by the element-resize-detector library. */
       .erd_scroll_detection_container > div::-webkit-scrollbar {
       	display: none;
@@ -78,7 +79,7 @@
                 <a href="https://www.mdex.mn/index" class="router-link-exact-active router-link-active">币币交易
                   <span></span></a>
               </li>
-              
+
               <li>
                 <a href="https://otc.mdex.mn/index" target="_blank">场外交易</a></li>
               <li>|</li>
@@ -87,7 +88,7 @@
                   <span></span></a>
               </li>
                   </ul>
-            
+
             <div class="header-right">
               <ul class="rightNav">
 
@@ -95,7 +96,7 @@
                   <li class="rightNav_item"><span>ID: </span><%= user.id %></li>
                   <li class="rightNav_item"><span>Mobile Number: </span><%= user.mobileNumber %></li>
                   <li class="rightNav_item"><span>pushLevel: </span><%= user.pushLevel %></li>
-                  <li class="rightNav_item"><span>upperId: </span><%= user.upperId %></li>                  
+                  <li class="rightNav_item"><span>upperId: </span><%= user.upperId %></li>
                 <% }); %>
 
                 <li class="rightNav_item">
@@ -155,8 +156,8 @@
               	<div class="funds-main">
                         <!-- TreeView -->
               		<div class="funds-aside">
-              			<div class="">              				
-                                    <div id="tree"></div>
+              			<div class="">
+                      <div id="tree"></div>
               			</div>
               		</div>
                         <!-- TreeView -->
@@ -178,24 +179,24 @@
                                          <dl class="hot-box clearfix">
                                                asdasdsad<br>asdsad<br>asda
                                          </dl>
-                                   </div> 
+                                   </div>
                                   <div class="recomm-content borderbox">
                                          <dl class="hot-box clearfix">
                                                asdasdsad<br>asdsad<br>asda
                                          </dl>
-                                   </div> 
+                                   </div>
                                    <div class="recomm-content borderbox">
                                          <dl class="hot-box clearfix">
                                                asdasdsad<br>asdsad<br>asda
                                          </dl>
-                                   </div> 
+                                   </div>
                                    <div class="recomm-content borderbox">
                                          <dl class="hot-box clearfix">
                                                asdasdsad<br>asdsad<br>asda
                                          </dl>
-                                   </div> 
+                                   </div>
                               </div>
-                              
+
                         </div>
 
 
@@ -203,9 +204,9 @@
                         <div class="funds-content">
                               <div class="fund-manage-top">
                                     <ul class="fund-manage-nav">
-                                          <li class="fundActive">Order Table</li> 
+                                          <li class="fundActive">Order Table</li>
                                           <!-- <li data-v-48366ce4="" class="">OTC account</li> -->
-                                    </ul> 
+                                    </ul>
                               </div>
               	      </div>
                   </div>
@@ -256,52 +257,6 @@
         $('#tree').treeview({data: mytree, enableLinks: true});
      });*/
 
-     var tree = [
-        {
-          text: "Parent 1",
-          nodes: [
-            {
-              text: "Child 1",
-              nodes: [
-                {
-                  text: "Google",
-                  href: "https://www.google.com"
-                },
-                {
-                  text: "Twitter",
-                  href: "https://www.twitter.com"
-                }
-              ]
-            },
-            {
-              text: "Facebook",
-              href: "https://www.facebook.com"
-            }
-          ]
-        },
-        {
-          text: "Google",
-          href: "https://www.google.com"
-        },
-        {
-           text: "Twitter",
-           href: "https://www.twitter.com",
-           tags: ["link"]
-        }
-      ];
 
-      function initTree(treeData) {
-          $('#tree').treeview({
-              data: treeData,
-              enableLinks: true
-          });
-          
-          // collapses all nodes
-          //$('#tree').treeview('collapseAll', { silent: true });
-      }
-
-      initTree(tree);
-
-
- </script> 
+ </script>
 </html>

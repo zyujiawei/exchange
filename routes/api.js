@@ -7,7 +7,14 @@ router.get('/user', function(req, res, next) {
 });
 
 router.get('/branch', function(req, res, next) {
-  res.json([{"id":13552,"showNickName":null,"mobileNumber":"13333823462","pushLevel":1,"upperId":13422},{"id":13434,"showNickName":null,"mobileNumber":"13453708029","pushLevel":1,"upperId":13422}]);
+  res.json([
+  {"id":13552,"showNickName":null,"mobileNumber":"13333823462","pushLevel":1,"upperId":13422},
+    {"id":13434,"showNickName":null,"mobileNumber":"13453708029","pushLevel":1,"upperId":13422},
+    {"id":13435,"showNickName":null,"mobileNumber":"13333823462","pushLevel":2,"upperId":13434},
+    {"id":13553,"showNickName":null,"mobileNumber":"13333823462","pushLevel":2,"upperId":13552},
+    {"id":13436,"showNickName":null,"mobileNumber":"13333823462","pushLevel":3,"upperId":13435}
+  ]
+);
 });
 
 router.get('/order', function(req, res, next) {
