@@ -16,10 +16,12 @@
     <link href="/stylesheets/app.css" rel="stylesheet">
     <link href="/stylesheets/custom.css" rel="stylesheet">
     <link href="/stylesheets/bootstrap-table.min.css" rel="stylesheet">
+    <link href="/stylesheets/bootstrap-datetimepicker.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
     <script>var themeURL = ["/static/css/theme_black.36b460ac8455d3a3384b521b75c593c2.css", "/static/css/theme_default.0fd12bb80fb377de9fa94d20c4ef2ac2.css", "/static/css/theme_white.335f447b27e4c404b63e97e76c2c3ad1.css"]</script>
     <script src="javascripts/jquery.js"></script>
     <script src="javascripts/moment-with-locales.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/zh-cn.js"></script>
     <script src="javascripts/bootstrap-treeview.js"></script>
     <script src="javascripts/bootstrap-table.min.js"></script>
     <script src="javascripts/bootstrap-datetimepicker.js"></script>
@@ -248,8 +250,14 @@
 </body>
 <script type="text/javascript">
     $(function () {
-        $('#startDate').datetimepicker();
-        $('#endDate').datetimepicker();
+        $('#startDate').datetimepicker({
+                    format: 'L',
+                    locale: 'zh-cn'
+                });
+        $('#endDate').datetimepicker({
+                    format: 'L',
+                    locale: 'zh-cn'
+                });
     });
 </script>
 </html>
