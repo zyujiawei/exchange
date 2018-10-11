@@ -76,6 +76,21 @@ $(document).ready(function(){
         title: '持仓'
     }]
   });
+  $('#totalonholdtable').bootstrapTable({
+    columns: [{
+        field: 'cointype',
+        title: '币种'
+    }, {
+        field: 'buy',
+        title: '总买'
+    }, {
+        field: 'sell',
+        title: '总卖'
+    }, {
+        field: 'hold',
+        title: '持仓'
+    }]
+  });
   $('#oredertable').bootstrapTable({
     columns: [{
         field: 'side',
